@@ -6,8 +6,6 @@
 	<title>Foster's x Tylenol</title>
 	<link rel="icon" type="image/png" href="images/favicon.png">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Teko:wght@600&display=swap" rel="stylesheet">
-	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Teko:wght@600&display=swap" rel="stylesheet">
 	<link href="css/reset.css" rel="stylesheet" type="text/css">
 	<link href="css/main.css" rel="stylesheet" type="text/css">
@@ -17,7 +15,7 @@
 		<h2 class="hidden">Header</h2>
 		
         <div id="logo">
-        	<a href="index.html"><img src="images/foster_tylenol_logo.svg" alt="Foster's x Tylenol"></a>
+        	<a href="index.html"><img src="images/foster_tylenol_logo.svg" alt="MashupLogo"></a>
         </div>
 
         <nav id="mainNav">
@@ -35,6 +33,39 @@
     <section id="container">
     	<h2 class="hidden">Body</h2>
 
+    	<section id="contact">
+			<div id="postalform">
+				<h2 class="hidden">Postal Form</h2>
+	               <div id="postalCode">
+		                <h3 class="hidden">PostalCode Form</h3>
+							<p>Product Locator</p>
+			                <form action="form.php" method="post">
+			                   <input type="text" size="16" required placeholder="Enter in Postal Code" id="postalcode">
+			                   <input id="enter" type="submit" value="Enter">
+			                 </form>
+	               </div>
+
+	               <div id="googleMap">
+	               	<h3 class="hidden">googleMap</h3>
+	               	<img src="images/GoogleMapTA.jpg" alt="Google_Map" width="446" height="467">
+	               </div>
+			</div>
+
+	        <div id="form">
+	         	<h3 class="hidden">Contact Form</h3>
+                 	<form action="form.php" method="post">
+                    <label>Name:</label>
+                    <input type="text" size="15" required placeholder="Enter your name" id="name">
+                    <label>Email:</label>
+                    <input type="text" size="15" required placeholder="Enter your email" id="email">
+                    <label>Order:</label>
+                    <input type="text" size="45" required placeholder="Enter in amount and products name of your request" id="order">
+                    <label>Verification:</label>
+                    <input type="text" size="20" required placeholder="What is 6 + 8 enter here" id="verification">
+                    <input id="submit" type="submit" value="submit">
+            	</form>
+            </div>
+        </section>
     </section>
 
     <footer id="footer">
