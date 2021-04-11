@@ -249,6 +249,7 @@ body
 {
 	display: flex;
 	flex-direction: row;
+	margin-top: 30px;
 	max-width: 370px;
 	max-height: 225px;
 }
@@ -309,6 +310,7 @@ body
 	display: flex;
 	flex-direction: column;
 	float: left;
+	max-width: 325px;
 	margin-top: 100px;
 }
 
@@ -322,6 +324,7 @@ body
 #paragrah1 p
 {
 	font-size: 15px;
+	line-height: 1.2;
 	margin-bottom: 50px;
 }
 
@@ -330,6 +333,7 @@ body
 	display: flex;
 	flex-direction: column;
 	float:right;
+	max-width: 325px;
 	margin-top: 100px;
 }
 
@@ -343,6 +347,7 @@ body
 #paragrah2 p
 {
 	font-size: 15px;
+	line-height: 1.2;
 	margin-bottom: 50px;
 }
 
@@ -362,6 +367,17 @@ body
 /*about part ends*/
 
 /*Product part starts*/
+.productDescrib
+{
+	display: flex;
+	flex-direction: column;
+}
+
+.productDescrib p
+{
+	margin-left: 50px;
+}
+
 #productLine1
 {
 	display: flex;
@@ -384,9 +400,11 @@ body
 	max-width: 130px;
 }
 
-#mashupbeer1 p
+#mashupbeer1 h4 
 {
 	margin-left: 30px;
+	font-weight: bold;
+	margin-bottom: 20px;
 }
 
 #mashupbeer2
@@ -401,9 +419,11 @@ body
 	max-width: 130px;
 }
 
-#mashupbeer2 p
+#mashupbeer2 h4  
 {
 	margin-left: 30px;
+	font-weight: bold;
+	margin-bottom: 20px;
 }
 
 #productLine2
@@ -428,9 +448,11 @@ body
 	max-width: 130px;
 }
 
-#fosterbeer1 p
+#fosterbeer1 h4 
 {
 	margin-left: 30px;
+	font-weight: bold;
+	margin-bottom: 20px;
 }
 
 #fosterbeer2
@@ -445,9 +467,11 @@ body
 	max-width: 130px;
 }
 
-#fosterbeer2 p
+#fosterbeer2 h4 
 {
 	margin-left: 30px;
+	font-weight: bold;
+	margin-bottom: 20px;
 }
 /*product part ends*/
 
@@ -510,6 +534,42 @@ body
 	object-fit: cover;
 	border: 0.5px solid black;
 	border-radius: 5px;
+}
+
+.adDescrib
+{
+	margin-left: 50px;
+	font-family: 'Open Sans', sans-serif
+}
+
+.adDescrib h5
+{
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.adDescrib p
+{
+	font-size: 15px;
+	margin-top: 20px;
+}
+
+#adDescrib2
+{
+	margin-right: 140px;
+	font-family: 'Open Sans', sans-serif
+}
+
+#adDescrib2 h5
+{
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#adDescrib2 p
+{
+	font-size: 15px;
+	margin-top: 20px;
 }
 /*advertisemnet part ends*/
 
