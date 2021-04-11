@@ -12,9 +12,10 @@
 </head>
 <body>
 	<section id="header">
-		<h2 class="hidden">Header</h2>
+		<h1 class="hidden">Header</h1>
 		
         <div id="logo">
+        	<h2 class="hidden">Main Logo</h2>
         	<a href="index.html"><img src="images/foster_tylenol_logo.svg" alt="MashupLogo"></a>
         </div>
 
@@ -39,32 +40,30 @@
 	               <div id="postalCode">
 		                <h3 class="hidden">PostalCode Form</h3>
 							<p>Product Locator</p>
+							<p>Please enter a zip code or address to start your search.</p>
 			                <form action="form.php" method="post">
 			                   <input type="text" size="16" required placeholder="Enter in Postal Code" id="postalcode">
+								<select name="products" id="droplist1">
+			                   	<option value="click">All Products</option>
+			                   	<option value="foster_extra_large">Foster Extra Strength Large</option>
+			                   	<option value="foster_extra_strength">Foster Extra Strength</option>
+			                   	<option value="foster_large">Foster Large</option>
+			                   	<option value="foster_light">Foster Light</option>
+			                   </select>
+			                   <select name="package" id="droplist2">
+			                   	<option value="click">All Packaging</option>
+			                   	<option value="can">Can</option>
+			                   	<option value="bottle">Bottle</option>
+			                   </select>
 			                   <input id="enter" type="submit" value="Enter">
 			                 </form>
 	               </div>
 
 	               <div id="googleMap">
-	               	<h3 class="hidden">googleMap</h3>
-	               	<img src="images/GoogleMapTA.jpg" alt="Google_Map" width="446" height="467">
+	               		<h3 class="hidden">googleMap</h3>
+	               		<img src="images/GoogleMapTA.jpg" alt="Google_Map" width="446" height="467">
 	               </div>
 			</div>
-
-	        <div id="form">
-	         	<h3 class="hidden">Contact Form</h3>
-                 	<form action="form.php" method="post">
-                    <label>Name:</label>
-                    <input type="text" size="15" required placeholder="Enter your name" id="name">
-                    <label>Email:</label>
-                    <input type="text" size="15" required placeholder="Enter your email" id="email">
-                    <label>Order:</label>
-                    <input type="text" size="45" required placeholder="Enter in amount and products name of your request" id="order">
-                    <label>Verification:</label>
-                    <input type="text" size="20" required placeholder="What is 6 + 8 enter here" id="verification">
-                    <input id="submit" type="submit" value="submit">
-            	</form>
-            </div>
         </section>
     </section>
 
