@@ -28,6 +28,19 @@ body
 	height: 85%;
 	margin-top: 15px;
 	margin-left: 80px;
+	animation-name: wiggle;
+	animation-duration: 1000ms;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in-out;
+}
+
+@keyframes wiggle 
+{
+	0% {transform: rotate(10deg);}
+	25% {transform: rotate(-10deg);}
+	50% {transform: rotate(20deg);}
+	75% {transform: rotate(-5deg);}
+	100% {transform: rotate(0deg);}
 }
 
 #mainNav ul
@@ -35,7 +48,7 @@ body
 	list-style-type: none;
 	float: right;
 	margin-top: 110px;
-	margin-left: 100px;
+	margin-left: 150px;
 	font-family: 'Teko', sans-serif;
 	font-size: 30px;
 }
@@ -80,7 +93,7 @@ body
 #container
 {
 	width:68%;
-	height:765px;
+	min-height:765px;
 	background-color: white;
 	margin: 0 auto;
 }
@@ -193,48 +206,67 @@ body
 	object-fit: cover;
 }
 
+#contentSection
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	font-family: 'Open Sans', sans-serif;
+	margin-top: 100px;
+}
+
 #mainSection1
 {
 	display: flex;
 	flex-direction: column;
 	max-width: 320px;
 	max-height: 370px;
-	float: left;
 }
 
 #sectionImages1
 {
 	display: flex;
 	flex-direction: row;
-	width: 295px;
+	justify-content: space-around;
+	max-width: 295px;
 	height: 210px;
 }
 
-#sectionImages1 img
+#sectionText1 h3
 {
-	max-width: 140px;
+	font-size: 20px;
+	font-weight: bold;
+	margin-top: 50px;
+	margin-bottom: 10px;
+}
+
+#sectionText1 p
+{
+	font-size: 15px;
 }
 
 #mainSection2
 {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	max-width: 370px;
 	max-height: 225px;
-	float: right;
 }
 
 #sectionImages2
 {
 	display: flex;
 	flex-direction: row;
-	width: 180px;
+	max-width: 180px;
 	height: 225px;
+	margin-right: 100px;
 }
 
-#sectionImages2 img
+#sectionText2 p
 {
-	max-width: 140px;
+	font-size: 15px;
+	margin-top: 30px;
+	margin-bottom: 20px;
 }
 
 #sectionText2 ul li a
@@ -242,14 +274,15 @@ body
   display: block;
   width: 100px;
   height: 30px;
-  font-size: 16px;
+  font-size: 20px;
   background-color: #EB242B;
   color: white;
   text-align: center;
   border: 1px solid black;
   border-radius: 15px;
   padding-top: 10px;
-  transition: all .3s ease-in-out; /*should go on normal state*/
+  margin: 0 auto;
+  transition: all .3s ease-in-out;
   font-family: 'Teko', sans-serif;
   text-decoration: none;
 }
@@ -268,9 +301,10 @@ body
 	margin: 0 auto;
 	width: 700px;
 	height: 275px;
+	font-family: 'Open Sans', sans-serif
 }
 
-#Paragrah1
+#paragrah1
 {
 	display: flex;
 	flex-direction: column;
@@ -278,7 +312,20 @@ body
 	margin-top: 100px;
 }
 
-#Paragrah2
+#paragrah1 h3
+{
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+#paragrah1 p
+{
+	font-size: 15px;
+	margin-bottom: 50px;
+}
+
+#paragrah2
 {
 	display: flex;
 	flex-direction: column;
@@ -286,11 +333,26 @@ body
 	margin-top: 100px;
 }
 
+#paragrah2 h3
+{
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+#paragrah2 p
+{
+	font-size: 15px;
+	margin-bottom: 50px;
+}
+
+
 #aboutLogo
 {
 	max-width: 170px;
 	max-height: 170px;
 	margin: 0 auto;
+	margin-top: 100px;
 }
 
 #aboutLogo img
@@ -308,6 +370,7 @@ body
 	float:left;
 	margin-top: 120px;
 	margin-left: 205px;
+	font-family: 'Open Sans', sans-serif
 }
 
 #mashupbeer1
@@ -351,6 +414,7 @@ body
 	float:right;
 	margin-top: 120px;
 	margin-right: 390px;
+	font-family: 'Open Sans', sans-serif
 }
 
 #fosterbeer1
@@ -388,11 +452,155 @@ body
 /*product part ends*/
 
 /*advertisement part starts*/
+#adArea
+{
+	display: flex;
+	flex-direction: column;
+	width:465px;
+	margin: 0 auto;
+}
 
+#advertisment1
+{
+	display: flex;
+	flex-direction: row;
+	width:465px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+#advertisment1 img
+{
+	width: 40%;
+	height: 180px;
+	object-fit: cover;
+	border: 0.5px solid black;
+	border-radius: 5px;
+}
+
+#advertisment2
+{
+	display: flex;
+	flex-direction: row-reverse;
+	width:465px;
+	margin-bottom: 50px;
+}
+
+#advertisment2 img
+{
+	width: 40%;
+	height: 180px;
+	object-fit: cover;
+	border: 0.5px solid black;
+	border-radius: 5px;
+}
+
+
+#advertisment3
+{
+	display: flex;
+	flex-direction: row;
+	width:465px;
+}
+
+#advertisment3 img
+{
+	width: 40%;
+	height: 180px;
+	object-fit: cover;
+	border: 0.5px solid black;
+	border-radius: 5px;
+}
 /*advertisemnet part ends*/
 
 /*contact part starts*/
+#contact
+{
+	max-width: 830px;
+	height: 440px;
+	margin: 0 auto;
+}
 
+#postalform
+{
+	display: flex;
+	flex-direction: row;
+}
+
+#postalCode
+{
+	display: flex;
+	flex-direction: column;
+	max-width: 300px;
+	margin-top: 100px;
+	font-family: 'Open Sans', sans-serif
+}
+
+#postalCode h4
+{
+	font-size: 20px;
+	font-weight: bold;
+	margin-left: -20px;
+}
+
+#postalCode p
+{
+	margin-top: 20px;
+	font-size: 15px;
+}
+
+#postalcode, #droplist1, #droplist2
+{
+ 	width: 300px;
+ 	height: 30px;
+ 	font-size: 20px;
+ 	margin-top: 30px;
+ 	letter-spacing: normal;
+ 	text-align: center;
+	line-height: 20px;
+ 	padding-left: 10px;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	font-family: 'Teko', sans-serif;
+}
+
+#enter
+{
+	border-style: none;
+	background-color: #EB242B;
+	width: 110px;
+	height: 30px;
+	color: white;
+	font-size: 20px;
+	margin-left: 90px;
+	margin-top: 30px;
+	border: 1px solid black;
+	text-align: center;
+	border-radius: 20px;
+	cursor: pointer;
+	transition: all .3s ease-in-out;
+	font-family: 'Teko', sans-serif;
+}
+
+#enter:hover
+{
+	border-radius: 10px;
+	background-color: navy;
+}
+
+
+#googleMap 
+{
+	width: 465px;
+	height: 435px;
+}
+
+#googleMap img
+{
+	margin-top: 100px;
+	margin-left: 100px;
+	width: 100%;
+}
 /*contact part ends*/
 
 
