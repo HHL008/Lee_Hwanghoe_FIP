@@ -1,8 +1,13 @@
+
+/*font-family: 'Open Sans', sans-serif;
+font-family: 'Teko', sans-serif*/
+
 .hidden
 {
 	display: none;
 }
 
+/*basic web set up starts*/
 body
 {
 	background-color: #bfbfbf;
@@ -86,6 +91,99 @@ body
 	height: 75px;
 	background-color: navy;
 }
+/*basic web set up ends*/
+
+/*agegate part starts*/
+#ageGate
+{
+	max-width: 1920px;
+	min-height: 1080px;
+    display: flex;
+    flex-direction: row;
+    background: rgb(4,0,113);
+	background: linear-gradient(30deg, rgba(4,0,113,1) 0%, rgba(53,53,185,1) 73%, rgba(72,61,238,1) 100%);
+}
+
+#agegateLogo
+{
+	width: 300px;
+	margin: 0 auto;
+	margin-top: 350px;
+}
+
+#agegateLogo img
+{
+	max-width: 400px;
+	max-height: 400px;
+}
+
+#agegateForm
+{
+	display: flex;
+	flex-direction: column;
+	width: 700px;
+	margin-top: 350px;
+	margin-right: 300px
+}
+
+#agegateForm p
+{
+	font-family: 'Teko', sans-serif;
+	margin-bottom: 20px;
+	margin-top: 10px;
+	font-size: 30px;
+	color: white;
+}
+
+#month, #date
+{
+	width: 60px;
+	height: 60px;
+	margin-top: 10px;
+	letter-spacing: normal;
+	padding-left: 10px;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	font-size: 30px;
+	font-family: 'Teko', sans-serif;
+}
+
+#year
+{
+	width: 100px;
+	height: 60px;
+	margin-top: 10px;
+	letter-spacing: normal;
+	padding-left: 10px;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	font-size: 30px;
+	font-family: 'Teko', sans-serif;
+}
+
+#agegateForm ul li a
+{
+	display: block;
+	width: 150px;
+	height: 50px;
+	font-size: 30px;
+	background-color: #EB242B;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	border: 1px solid black;
+	border-radius: 35px;
+	padding-top: 20px;
+	transition: all .3s ease-in-out;
+	font-family: 'Teko', sans-serif;
+}
+
+#agegateForm ul li a:hover
+{
+	background-color: #184785;
+	border-radius: 10px;
+}
+/*agegate part ends*/
 
 /*index part starts*/
 #headerImage img
@@ -152,7 +250,7 @@ body
   border-radius: 15px;
   padding-top: 10px;
   transition: all .3s ease-in-out; /*should go on normal state*/
-  font-family: 'Heebo', sans-serif;
+  font-family: 'Teko', sans-serif;
   text-decoration: none;
 }
 
